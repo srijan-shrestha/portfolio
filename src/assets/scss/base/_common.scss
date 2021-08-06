@@ -1,4 +1,22 @@
 *{
-    font-family: $bodyFont;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 $headerHeight;
+    font-family: $bodyFont;
+    font-size: $f-md;
+    background-color: $bodyColor;
+    color: $textColor;
+}
+
+h1,h2,h3,h4 {
+    color: $titleColor;
+    font-weight: $fw-sb;
 }
