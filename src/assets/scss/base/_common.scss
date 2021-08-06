@@ -20,3 +20,16 @@ h1,h2,h3,h4 {
     color: $titleColor;
     font-weight: $fw-sb;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
