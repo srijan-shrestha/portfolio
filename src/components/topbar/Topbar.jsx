@@ -1,4 +1,4 @@
-import "./topbar.scss"
+import "../../assets/scss/layouts/_header.scss";
 
 export default function Topbar() {
     return(
@@ -37,8 +37,13 @@ export default function Topbar() {
                         <i class="uil uil-message"></i> Contact Me
                         </a>
                     </li>
-                    
                 </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div className="nav__btns">
+                <div className="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
             </div>
           </nav>
       </header>
