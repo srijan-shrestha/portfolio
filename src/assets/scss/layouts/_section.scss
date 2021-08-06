@@ -1,0 +1,14 @@
+.section {
+    padding: 2rem 0 4rem;
+    text-align: center;
+
+    &__title {
+        font-size: $fs-h1;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: $fs-sm;
+        margin-bottom: $mb-3;
+    }
+}
