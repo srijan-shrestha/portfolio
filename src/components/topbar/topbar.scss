@@ -39,7 +39,7 @@
 
     &__menu {
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: $bodyColor;
@@ -47,6 +47,42 @@
         box-shadow: 0 -1px 4px rgba(0,0,0,.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
+    }
+
+    &__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: $fs-sm;
+        color: $titleColor;
+        font-weight: $fw-md;
+        
+        &:hover {
+            color: $primary
+        }
+
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+    }
+
+    &__close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: .5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $primary;
+
+        &:hover {
+            color: $primaryDark;
+        }
     }
 
 }
