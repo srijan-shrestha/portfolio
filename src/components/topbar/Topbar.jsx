@@ -1,4 +1,4 @@
-import "../../assets/scss/layouts/_header.scss";
+import "./topbar.scss";
 
 export default function Topbar() {
     return(
@@ -9,40 +9,40 @@ export default function Topbar() {
                 <ul className="nav__list grid">
                     <li className="nav__item">
                         <a href="#home" className="nav__link">
-                            <i class="uil uil-estate"></i> Home
+                            <i className="uil uil-estate"></i> Home
                         </a>
                     </li>
                     <li className="nav__item">
                         <a href="#about" className="nav__link">
-                            <i class="uil uil-user"></i> About
+                            <i className="uil uil-user"></i> About
                         </a>
                     </li>
                     <li className="nav__item">
                         <a href="#skills" className="nav__link">
-                            <i class="uil uil-file-alt"></i>  Skills
+                            <i className="uil uil-file-alt"></i>  Skills
                         </a>
                     </li>
                     <li className="nav__item">
                         <a href="#services" className="nav__link">
-                            <i class="uil uil-briefcase-alt"></i> Services
+                            <i className="uil uil-briefcase-alt"></i> Services
                         </a>
                     </li>
                     <li className="nav__item">
                         <a href="#portfolio" className="nav__link">
-                            <i class="uil uil-scenery"></i> Portfolio
+                            <i className="uil uil-scenery"></i> Portfolio
                         </a>
                     </li>
                     <li className="nav__item">
                         <a href="#contact" className="nav__link">
-                        <i class="uil uil-message"></i> Contact Me
+                        <i className="uil uil-message"></i> Contact Me
                         </a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
+                <i className="uil uil-times nav__close" id="nav-close"></i>
             </div>
             <div className="nav__btns">
                 <div className="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
+                    <i className="uil uil-apps"></i>
                 </div>
             </div>
           </nav>

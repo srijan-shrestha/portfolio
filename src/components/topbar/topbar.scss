@@ -1,0 +1,40 @@
+@import "../../assets/scss/abstracts/variables";
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/typography";
+
+
+.header {
+    width: 100%;
+    color: red;
+    position: fixed;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $bodyColor;
+}
+
+.nav {
+    max-width: 968px;
+    height: $headerHeight;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        color: $titleColor;
+        font-weight: $fw-md;
+        &:hover {
+            color: $primary;
+        }
+    }
+    
+    &__toggle {
+        color: $titleColor;
+        font-weight: $fw-md;
+        font-size: 1.1rem;
+        cursor: pointer;
+        &:hover {
+            color: $primary;
+        }
+    }
+
+}
