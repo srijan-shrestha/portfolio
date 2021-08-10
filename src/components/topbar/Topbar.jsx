@@ -1,11 +1,15 @@
 import "./topbar.scss";
 
 export default function Topbar() {
+    function menuClick() {
+        console.log('menu clicked');
+    }
+
     return(
       <header className="header" id="header">
           <nav className="nav container">
             <a href="srijan" className="nav__logo">Srijan</a>
-            <div className="nav__menu" id="nav-menu">
+            <div className="nav__menu" id="nav-menu" onClick={menuClick}>
                 <ul className="nav__list grid">
                     <li className="nav__item">
                         <a href="#home" className="nav__link">
