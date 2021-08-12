@@ -3,6 +3,7 @@ import "./topbar.scss";
 
 export default function Topbar() {
     const [showMenu, setShowMenu] = useState(false)
+    // const [showMenuForMobile, setMenuForMobile] = useState(false)
 
     return(
       <header className="header" id="header">
@@ -11,32 +12,32 @@ export default function Topbar() {
             <div className={`nav__menu ${showMenu ? "show-menu": " "}`} id="nav-menu">
                 <ul className="nav__list grid">
                     <li className="nav__item">
-                        <a href="#home" className="nav__link">
+                        <a href="#home" className="nav__link" onClick={() =>setShowMenu(false)}>
                             <i className="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#about" className="nav__link">
+                        <a href="#about" className="nav__link" onClick={() =>setShowMenu(false)}>
                             <i className="uil uil-user nav__icon" ></i> About
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#skills" className="nav__link">
+                        <a href="#skills" className="nav__link" onClick={() =>setShowMenu(false)}>
                             <i className="uil uil-file-alt nav__icon"></i>  Skills
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#services" className="nav__link">
+                        <a href="#services" className="nav__link" onClick={() =>setShowMenu(false)}>
                             <i className="uil uil-briefcase-alt nav__icon"></i> Services
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#portfolio" className="nav__link">
+                        <a href="#portfolio" className="nav__link" onClick={() =>setShowMenu(false)}>
                             <i className="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#contact" className="nav__link">
+                        <a href="#contact" className="nav__link" onClick={() =>setShowMenu(false)}>
                         <i className="uil uil-message nav__icon"></i> Contact Me
                         </a>
                     </li>
@@ -44,7 +45,7 @@ export default function Topbar() {
                 <i className="uil uil-times nav__close" id="nav-close" onClick={() => setShowMenu(false)}></i>
             </div>
             <div className="nav__btns">
-                <div className="nav__toggle" id="nav-toggle" onClick={() => setShowMenu(true)}>
+                <div className="nav__toggle" id="nav-toggle" onClick={() => setShowMenu(!showMenu)}>
                     <i className="uil uil-apps"></i>
                 </div>
             </div>
