@@ -1,15 +1,27 @@
 import "./topbar.scss";
 
 export default function Topbar() {
+    let showMenu = false;
     function menuClick() {
+       
         console.log('menu clicked');
+    }
+
+    function toggleMenu() {
+        showMenu = true;
+        console.log('toggle', showMenu);
+    }
+
+    function menuClose() {
+        showMenu = false;
+        console.log('close');
     }
 
     return(
       <header className="header" id="header">
           <nav className="nav container">
             <a href="srijan" className="nav__logo">Srijan</a>
-            <div className="nav__menu" id="nav-menu" onClick={menuClick}>
+            <div className={`nav__menu ${showMenu ? "show-menu": ""}`} id="nav-menu" onClick={menuClick}>
                 <ul className="nav__list grid">
                     <li className="nav__item">
                         <a href="#home" className="nav__link">
@@ -42,10 +54,10 @@ export default function Topbar() {
                         </a>
                     </li>
                 </ul>
-                <i className="uil uil-times nav__close" id="nav-close"></i>
+                <i className="uil uil-times nav__close" id="nav-close" onClick={menuClose}></i>
             </div>
             <div className="nav__btns">
-                <div className="nav__toggle" id="nav-toggle">
+                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
                     <i className="uil uil-apps"></i>
                 </div>
             </div>
