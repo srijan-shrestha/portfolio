@@ -1,4 +1,6 @@
-export default function Main() {
+import blobSvg from '../../assets/images/blob.svg'
+
+const Main = () =>{
     return (
         <main className="main">
             <section className="home section" id="home">
@@ -14,11 +16,13 @@ export default function Main() {
                         </div>
                     </div>
                     <div className='home__img'>
-                        
+                        <img src={blobSvg} alt='svg'></img>
                     </div>
                 </div>
             </section>
         </main>
     )
 }
+
+export default Main;
 
