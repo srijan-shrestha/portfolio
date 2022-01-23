@@ -5,4 +5,19 @@
     padding: 1rem;
     border-radius: .5rem;
     font-weight: $fw-md;
+
+    &:hover{
+        background-color: $primaryDark;
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        margin-left: $mb-0-5;
+        transition: .3s;
+    }
+
+    &--flex {
+        display: inline-flex;
+        align-items: center;
+    }
 }
