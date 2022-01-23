@@ -1,6 +1,5 @@
 .section {
     padding: 2rem 0 4rem;
-    text-align: center;
 
     &__title {
         font-size: $fs-h1;
@@ -11,4 +10,8 @@
         font-size: $fs-sm;
         margin-bottom: $mb-3;
     }
+
+    &__title, &__subtitle {
+        text-align: center;
+    } 
 }
