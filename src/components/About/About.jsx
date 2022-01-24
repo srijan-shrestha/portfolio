@@ -1,5 +1,6 @@
 import './About.scss';
 import cv from '../../assets/pdf/srijan_resume.pdf';
+import aboutMeImage from '../../assets/images/portfolio.jpg';
 
 
 const About = () => (
@@ -7,7 +8,7 @@ const About = () => (
     <h2 className='section__title'>About Me</h2>
     <span className='section__subtitle'>My introduction</span>
     <div className='about__container container grid'>
-        <img src='../../assets/images/portfolio.jpg' alt='' className='about__img'></img>
+        <img src={aboutMeImage} alt='' className='about__img'></img>
         <div className='about__data'>
             <p className='about__description'>
                 Web developer, with extensive knowledge and years of experience, working in web technologies, delivering quality work.
