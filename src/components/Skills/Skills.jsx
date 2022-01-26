@@ -2,7 +2,9 @@ import './Skills.scss';
 import { useState } from "react";
 
 export default function Skills () {
-    const [showSkills, toggleSkills] = useState(false);
+    const [showFESkills, toggleFESkills] = useState(false);
+    const [showBESkills, toggleBESkills] = useState(false);
+
 
     return(
         <section className='skills section' id='skills'>
