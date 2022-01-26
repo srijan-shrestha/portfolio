@@ -1,1 +1,37 @@
-.experience {}
+@import "../../assets/scss/abstracts/variables";
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/typography";
+
+.experience {
+    &__container {
+        grid-template-columns: max-content auto;
+    }
+
+    &__tabList {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__button {
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 42px;
+        padding: 0px 20px 2px;
+        border: 0;
+        border-left: 2px solid $primaryLight;
+        background-color: transparent;
+        color: $primary;
+        font-size: $fs-md;
+        text-align: left;
+        white-space: nowrap;
+        border-radius: 0px;
+        cursor: pointer;
+    }
+
+    &__tabPanels{
+        margin-left: 1.25rem;
+        padding: 10px 5px;
+    }
+}

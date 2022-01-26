@@ -1,9 +1,8 @@
 import './Skills.scss';
-import { useState } from "react";
 
 export default function Skills () {
-    const [showFESkills, toggleFESkills] = useState(false);
-    const [showBESkills, toggleBESkills] = useState(false);
+    // const [showFESkills, toggleFESkills] = useState(false);
+    // const [showBESkills, toggleBESkills] = useState(false);
 
 
     return(
