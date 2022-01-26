@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import './Experience.scss';
 
 const Experience = () => (
-  <div className="Experience">
-    Experience Component
-  </div>
+ <section className='experience section' id='experience'>
+     <h2 className='section__title'>Experience</h2>
+     <span className='section__subtitle'>Where I've worked</span>
+     
+     <div className='experience__container container grid'>
+         <div className='experience__tabList'>asd</div>
+         <div className='experience__tabPanels'>asd</div>
+     </div>
+ </section>
 );
-
-Experience.propTypes = {};
-
-Experience.defaultProps = {};
 
 export default Experience;
