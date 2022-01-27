@@ -13,7 +13,7 @@
     }
 
     &__button {
-        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        transition: $transition;
         display: flex;
         align-items: center;
         width: 100%;
@@ -22,16 +22,50 @@
         border: 0;
         border-left: 2px solid $primaryLight;
         background-color: transparent;
-        color: $primary;
+        // color: $primary;
         font-size: $fs-md;
         text-align: left;
         white-space: nowrap;
         border-radius: 0px;
         cursor: pointer;
+
+        &-active {
+            color: $primary;
+            border-left: 4px solid $primary;
+
+            // background-color: $primary;
+        }
+
+        &:hover {
+            background-color: $primaryLight;
+        }
     }
 
-    &__tabPanels{
+    &__tabPanels {
         margin-left: 1.25rem;
         padding: 10px 5px;
+    }
+
+    &__company {
+        color: $primary;
+
+        &-link {
+            display: inline-block;
+            transition: $transition;
+            color: $primary;
+
+
+            &::after {
+                content: "";
+                display: block;
+                width: 0px;
+                height: 1px;
+                position: relative;
+                bottom: 0.37em;
+                background-color: $primary;
+                transition: $transition;
+                opacity: 0.5;
+            }
+        }
     }
 }

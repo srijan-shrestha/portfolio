@@ -7,7 +7,7 @@ const Experience = () => (
      
      <div className='experience__container container grid'>
          <div className='experience__tabList'>
-             <button id='tab1' className='experience__button'>
+             <button id='tab1' className='experience__button experience__button-active'>
                  InsightWorkshop
              </button>
              <button id='tab2' className='experience__button'>
@@ -18,7 +18,14 @@ const Experience = () => (
              </button>
 
          </div>
-         <div className='experience__tabPanels'>asd</div>
+         <div className='experience__tabPanels'>
+             <h3>
+                 <span>Fullstack Software Engineer</span>
+                 <span className='experience__company'>
+                       @ <a className='experience__company-link' href='http://insightworkshop.io/' rel='noreferrer' target='_blank'>Insight Workshop</a>
+                 </span>
+             </h3>
+         </div>
      </div>
  </section>
 );
