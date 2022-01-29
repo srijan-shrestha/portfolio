@@ -16,7 +16,7 @@ const Main = () =>{
                             </a>
                         </div>
                     </div>
-                    <div className='home__img'>
+                    {/* <div className='home__img'>
                         <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -32,7 +32,7 @@ const Main = () =>{
                                 <image x='12' y='18' className='home__blob-img' xlinkHref={blobImage}/>
                             </g>
                         </svg>
-                    </div>
+                    </div> */}
                     <div className='home__data'>
                         <h1 className='home__title'>Hi, I am Srijan</h1>
                         <h3 className='home__subtitle'>Full Stack Developer</h3>
