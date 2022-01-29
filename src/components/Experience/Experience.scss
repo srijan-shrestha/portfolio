@@ -5,9 +5,12 @@
 .experience {
     &__container {
         grid-template-columns: max-content auto;
+        // grid-template-rows: max-content auto;
     }
 
     &__tabList {
+        // display: flex;
+        // flex-direction: row;
         margin: 0;
         padding: 0;
     }
@@ -53,6 +56,9 @@
             display: inline-block;
             transition: $transition;
             color: $primary;
+            text-decoration: none;
+            text-decoration-skip-ink: auto;
+            position: relative;
 
 
             &::after {
@@ -61,11 +67,27 @@
                 width: 0px;
                 height: 1px;
                 position: relative;
+                top: 1px;
                 bottom: 0.37em;
                 background-color: $primary;
                 transition: $transition;
                 opacity: 0.5;
             }
+
+            &:hover {
+                color: $primary;
+                outline: 0px;
+
+                &::after {
+                    width: 100%;
+                }
+            }
         }
+    }
+
+    &__range {
+        font-size: $fs-xs;
+        color: $textColorLight;
+        margin-bottom: 1.25rem;
     }
 }

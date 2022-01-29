@@ -21,9 +21,9 @@ const Experience = () => (
          <div className='experience__tabPanels'>
              <h3>
                  <span>Fullstack Software Engineer</span>
-                 <span className='experience__company'>
-                       @ <a className='experience__company-link' href='http://insightworkshop.io/' rel='noreferrer' target='_blank'>Insight Workshop</a>
+                 <span className='experience__company'> @ <a className='experience__company-link' href='http://insightworkshop.io/' rel='noreferrer' target='_blank'>Insight Workshop</a>
                  </span>
+                 <p className='experience__range'>June 2018 - November 2021</p>
              </h3>
          </div>
      </div>
