@@ -56,21 +56,25 @@ const Experience = () => (
              </button>
 
          </div>
-         <div className='experience__tabPanels'>
-             <h3>
-                 <span>Fullstack Software Engineer</span>
-                 <span className='experience__company'> @ <a className='experience__company-link' href='http://insightworkshop.io/' rel='noreferrer' target='_blank'>Insight Workshop</a>
-                 </span>
-                 <p className='experience__duration'>June 2018 - November 2021</p>
-             </h3>
-             <div>
-                 <ul className='experience__reponsibilities'>
-                     <li>
-                         Write 
-                     </li>
-                 </ul>
-             </div>
-         </div>
+            const data = experiences.map(function(exp){
+                return  
+                <div className='experience__tabPanels'>
+                <h3>
+                    <span></span>
+                    <span className='experience__company'> @ <a className='experience__company-link' href='http://insightworkshop.io/' rel='noreferrer' target='_blank'>Insight Workshop</a>
+                    </span>
+                    <p className='experience__duration'>June 2018 - November 2021</p>
+                </h3>
+                <div>
+                    <ul className='experience__reponsibilities'>
+                        <li>
+                            Write 
+                        </li>
+                    </ul>
+                </div>npm s
+            </div>
+            });
+            
      </div>
  </section>
 );

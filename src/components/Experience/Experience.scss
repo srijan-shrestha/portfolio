@@ -95,7 +95,7 @@
         list-style: none;
         margin: 0px;
         padding: 0px;
-        font-size: $fs-lg;
+        font-size: $fs-md;
 
         li {
             position: relative;
@@ -107,6 +107,7 @@
                 position: absolute;
                 left: 0px;
                 color: $primary;
+                font-size: $fs-lg;
             }
         }
     }
