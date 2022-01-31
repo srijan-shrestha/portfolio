@@ -1,5 +1,4 @@
 import "./main.scss";
-import blobImage from '../../assets/images/portfolio.jpg';
 
 const Main = () =>{
     return (

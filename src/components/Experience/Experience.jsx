@@ -1,8 +1,9 @@
+import { useState } from 'react/cjs/react.development';
 import './Experience.scss';
 
 const companies = [
   { name: 'Insight Workshop', code: 'IW' },
-  { name: 'OutCode', code: 'outcode' },
+  { name: 'Outcode Software', code: 'outcode' },
   { name: 'Devfinity', code: 'devfinity' }
 ];
 
@@ -37,43 +38,56 @@ const experiences = [
     link: 'https://devfinity.io/',
     duration: 'November 2021 - Present',
     responsibilities: [
-      'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA',
-      'Maintain the application to be usable by their multiple branch company ',
-      'Interfaced with clients on daily basis, providing technological expertise'
+      'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA'
     ]
   }
 ];
 
 function Experience() {
+  const [companyCode, toggleComapny] = useState('IW');
+
   const companyContent = companies.map((company) => (
     <div>
-      <button id={company.code} className='experience__button'>
+      <button
+        id={company.code}
+        className={`experience__button ${companyCode === company.code ? 'experience__button-active' : ''}`}
+        onClick={() => toggleComapny(company.code)}
+      >
         {company.name}
       </button>
     </div>
   ));
 
-  const experienceContent = experiences.map((exp) => (
-    <div>
-      <h3>
-        <span></span>
-        <span className='experience__company'>
-          {exp.title} @{' '}
-          <a className='experience__company-link' href={exp.link} rel='noreferrer' target='_blank'>
-            {exp.company}
-          </a>
-        </span>
-        <p className='experience__duration'>{exp.duration}</p>
-      </h3>
-      {exp.responsibilities.map((responsiblity) => (
+  const company = companies.filter((elem) => elem.code === companyCode);
+  let experience = null;
+  if (company.length) {
+    experience = experiences.filter((elem) => elem.company === company[0].name);
+  }
+  let experienceContent = null;
+  if (experience) {
+    experienceContent = experience.map((exp) => (
         <div>
-          <ul className='experience__reponsibilities'>
-            <li>{responsiblity}</li>
-          </ul>
+          <h3>
+            <span></span>
+            <span className='experience__company'>
+              {exp.title} @{' '}
+              <a className='experience__company-link' href={exp.link} rel='noreferrer' target='_blank'>
+                {exp.company}
+              </a>
+            </span>
+            <p className='experience__duration'>{exp.duration}</p>
+          </h3>
+          {exp.responsibilities.map((responsiblity) => (
+            <div>
+              <ul className='experience__reponsibilities'>
+                <li>{responsiblity}</li>
+              </ul>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  ));
+      ));
+  }
+
 
   return (
     <div>
