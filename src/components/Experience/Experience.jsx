@@ -53,7 +53,10 @@ function Experience() {
         className={`experience__button ${companyCode === company.code ? 'experience__button-active' : ''}`}
         onClick={() => toggleComapny(company.code)}
       >
-        {company.name}
+          <span>
+          {company.name}
+          </span>
+       
       </button>
     </div>
   ));
@@ -63,31 +66,28 @@ function Experience() {
   if (company.length) {
     experience = experiences.filter((elem) => elem.company === company[0].name);
   }
-  let experienceContent = null;
-  if (experience) {
-    experienceContent = experience.map((exp) => (
-        <div>
-          <h3>
-            <span></span>
-            <span className='experience__company'>
-              {exp.title} @{' '}
-              <a className='experience__company-link' href={exp.link} rel='noreferrer' target='_blank'>
-                {exp.company}
-              </a>
-            </span>
-            <p className='experience__duration'>{exp.duration}</p>
-          </h3>
-          {exp.responsibilities.map((responsiblity) => (
-            <div>
-              <ul className='experience__reponsibilities'>
-                <li>{responsiblity}</li>
-              </ul>
-            </div>
-          ))}
-        </div>
-      ));
-  }
 
+  const experienceContent = experience.map((exp) => (
+    <div>
+      <h3>
+        <span></span>
+        <span className='experience__company'>
+          {exp.title} @{' '}
+          <a className='experience__company-link' href={exp.link} rel='noreferrer' target='_blank'>
+            {exp.company}
+          </a>
+        </span>
+        <p className='experience__duration'>{exp.duration}</p>
+      </h3>
+      {exp.responsibilities.map((responsiblity) => (
+        <div>
+          <ul className='experience__reponsibilities'>
+            <li>{responsiblity}</li>
+          </ul>
+        </div>
+      ))}
+    </div>
+  ));
 
   return (
     <div>
