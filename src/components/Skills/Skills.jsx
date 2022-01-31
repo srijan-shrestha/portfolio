@@ -26,7 +26,7 @@ export default function Skills () {
                                More than 4 years
                            </span>
                        </div>
-                       <i class="uil uil-angle-down skills__arrow"></i>
+                       <i className="uil uil-angle-down skills__arrow"></i>
                    </div>
    
                    <div className='skills__list grid'>
@@ -84,7 +84,7 @@ export default function Skills () {
                                More than 4 years
                            </span>
                        </div>
-                       <i class="uil uil-angle-down skills__arrow"></i>
+                       <i className="uil uil-angle-down skills__arrow"></i>
                    </div>
    
                    <div className='skills__list grid'>
