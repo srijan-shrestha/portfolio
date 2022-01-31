@@ -1,10 +1,16 @@
 import './Experience.scss';
 
+const companies = [
+  { name: 'Insight Workshop', code: 'IW' },
+  { name: 'OutCode', code: 'outcode' },
+  { name: 'Devfinity', code: 'devfinity' }
+];
+
 const experiences = [
   {
     title: 'Fullstack Software Engineer',
     company: 'Insight Workshop',
-    link: 'http://insightworkshop.io/',
+    link: 'https://insightworkshop.io/',
     duration: 'June 2018 - November 2021',
     responsibilities: [
       'Write modern, performant, maintanable code for a diverse array of client and internal projects',
@@ -16,7 +22,7 @@ const experiences = [
   {
     title: 'Frontend Software Engineer',
     company: 'Outcode Software',
-    link: 'outcodesoftware.com/',
+    link: 'https://outcodesoftware.com/',
     duration: 'June 2018 - November 2021',
     responsibilities: [
       'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA',
@@ -28,7 +34,7 @@ const experiences = [
   {
     title: 'Fullstack Software Engineer',
     company: 'Devfinity',
-    link: 'devfinity.io',
+    link: 'https://devfinity.io/',
     duration: 'November 2021 - Present',
     responsibilities: [
       'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA',
@@ -39,6 +45,14 @@ const experiences = [
 ];
 
 function Experience() {
+  const companyContent = companies.map((company) => (
+    <div>
+      <button id={company.code} className='experience__button'>
+        {company.name}
+      </button>
+    </div>
+  ));
+
   const experienceContent = experiences.map((exp) => (
     <div>
       <h3>
@@ -68,18 +82,7 @@ function Experience() {
         <span className='section__subtitle'>Where I've worked</span>
 
         <div className='experience__container container grid'>
-          <div className='experience__tabList'>
-            <button id='tab1' className='experience__button experience__button-active'>
-              InsightWorkshop
-            </button>
-            <button id='tab2' className='experience__button'>
-              Outcode
-            </button>
-            <button id='tab3' className='experience__button'>
-              Devfinity
-            </button>
-          </div>
-
+          <div className='experience__tabList'>{companyContent}</div>
           <div className='experience__tabPanels'>{experienceContent}</div>
         </div>
       </section>
