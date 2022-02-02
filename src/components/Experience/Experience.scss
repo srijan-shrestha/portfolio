@@ -35,8 +35,7 @@
         &-active {
             color: $primary;
             border-left: 4px solid $primary;
-
-            // background-color: $primary;
+            background-color: $primaryLight;
         }
 
         &:hover {
