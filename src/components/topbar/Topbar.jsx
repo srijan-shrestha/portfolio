@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import './topbar.scss';
 
@@ -6,15 +5,21 @@ export default function Topbar() {
   const [showMenu, setShowMenu] = useState(false);
   const darkTheme = 'dark-theme';
   const iconTheme = 'uil-sun';
-  const selectedTheme = localStorage.getItem('selected-theme');
-  const selectedIcon = localStorage.getItem('selected-icon');
+  const [iconThemeState, setIconTheme] = useState('uil-sun');
+  const selectedTheme = localStorage.getItem('selected-theme') ;
+  let selectedIcon = localStorage.getItem('selected-icon') ? localStorage.getItem('selected-icon') : iconThemeState;
   const [themeState, setTheme] = useState();
-  const [iconThemeState, setIconTheme] = useState();
-  const getCurrentTheme = () => (document.body.classList.contains(darkTheme) ? 'dark' : 'light');
-  const getCurrentIcon = () =>
-    document.getElementById('theme-button').classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
 
-  // const [showMenuForMobile, setMenuForMobile] = useState(false)
+  const setIcon = () => {
+      console.log('1', iconThemeState);
+    setIconTheme(iconThemeState === 'uil-sun' ? 'uil-moon' : 'uil-sun');
+    console.log('2', iconThemeState);
+
+    localStorage.setItem('selected-icon', iconThemeState);
+    selectedIcon = iconThemeState;
+  console.log('sd', selectedIcon);
+
+  };
 
   return (
     <header className='header' id='header'>
@@ -58,7 +63,7 @@ export default function Topbar() {
           <i className='uil uil-times nav__close' id='nav-close' onClick={() => setShowMenu(false)}></i>
         </div>
         <div className='nav__btns'>
-          <i class='uil uil-moon change-theme' id='theme-button' ref='icon'></i>
+          <i className={`uil ${selectedIcon} change-theme`} id='theme-button' onClick={() => setIcon()}></i>
           <div className='nav__toggle' id='nav-toggle' onClick={() => setShowMenu(!showMenu)}>
             <i className='uil uil-apps'></i>
           </div>
