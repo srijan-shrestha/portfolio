@@ -4,13 +4,12 @@
 
 .experience {
     &__container {
-        grid-template-columns: max-content auto;
+        grid-auto-flow: column;
+        grid-template: max-content auto;
         // grid-template-rows: max-content auto;
     }
 
     &__tabList {
-        // display: flex;
-        // flex-direction: row;
         margin: 0;
         padding: 0;
     }
@@ -50,6 +49,7 @@
 
     &__company {
         font-size: $fs-h2;
+
         &-link {
             display: inline-block;
             transition: $transition;
@@ -93,7 +93,7 @@
         list-style: none;
         margin: 0px;
         padding: 0px;
-        font-size: 1.125rem;
+        font-size: 1rem;
 
         li {
             position: relative;
@@ -108,4 +108,29 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 568px) {
+    .experience {
+
+        &__container {
+            grid-auto-flow: row;
+            grid-template: max-content auto;
+        }
+    
+        &__tabList {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__button {
+            border-left: 0;
+            &-active {
+                color: $primary;
+                border-bottom: 4px solid $primary;
+                background-color: $primaryLight;
+            }
+        }
+    }
+
 }
