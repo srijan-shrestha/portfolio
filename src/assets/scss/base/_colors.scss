@@ -9,4 +9,18 @@ $textColorLight: hsl($hue, 8%, 65%);
 $inputColor: hsl($hue, 70%, 96%);
 $bodyColor: hsl($hue, 60%, 99%);
 $conatinerColor: white;
+$scrollBarColor: hsl($hue, 12%, 90%);
+$scrollThumbColor: hsl($hue, 12%, 80%);
+
+body.dark-theme {
+    $hue: 230; // purple 250, Green 142, Blue 230, Pink 340
+    $secondary: hsl($hue, 30%, 8%);
+    $titleColor: hsl($hue, 8%, 95%);
+    $textColor: hsl($hue, 8%, 75%);
+    $inputColor: hsl($hue, 29%, 16%);
+    $bodyColor: hsl($hue, 28%, 12%);
+    $conatinerColor: hsl($hue, 29%, 16%);
+    $scrollBarColor: hsl($hue, 12%, 48%);
+    $scrollThumbColor: hsl($hue, 12%, 36%);
+}
 

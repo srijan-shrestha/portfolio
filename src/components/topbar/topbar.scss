@@ -107,17 +107,6 @@
     bottom: 0 !important;
 }
 
-body.dark-theme {
-    $hue: 230; // purple 250, Green 142, Blue 230, Pink 340
-    $secondary: hsl($hue, 30%, 8%);
-    $titleColor: hsl($hue, 8%, 95%);
-    $textColor: hsl($hue, 8%, 75%);
-    $inputColor: hsl($hue, 29%, 16%);
-    $bodyColor: hsl($hue, 28%, 12%);
-    $conatinerColor: hsl($hue, 29%, 16%);
-     
-}
-
 @media screen and (max-width: 767px) {
     .nav__menu {
         position: fixed;

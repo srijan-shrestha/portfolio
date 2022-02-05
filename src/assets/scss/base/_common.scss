@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,7 +16,22 @@ body {
     color: $textColor;
 }
 
-h1,h2,h3,h4 {
+body.dark-theme {
+    $hue: 230; // purple 250, Green 142, Blue 230, Pink 340
+    $secondary: hsl($hue, 30%, 8%);
+    $titleColor: hsl($hue, 8%, 95%);
+    $textColor: hsl($hue, 8%, 75%);
+    $inputColor: hsl($hue, 29%, 16%);
+    $bodyColor: hsl($hue, 28%, 12%);
+    $conatinerColor: hsl($hue, 29%, 16%);
+    $scrollBarColor: hsl($hue, 12%, 48%);
+    $scrollThumbColor: hsl($hue, 12%, 36%);
+}
+
+h1,
+h2,
+h3,
+h4 {
     color: $titleColor;
     font-weight: $fw-sb;
 }
@@ -32,4 +47,19 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: $scrollBarColor;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $scrollThumbColor;
+    border-radius: 0.5rem;
+    
+    &:hover {
+        background-color: $textColorLight;
+    }
 }

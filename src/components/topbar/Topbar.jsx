@@ -3,22 +3,20 @@ import './topbar.scss';
 
 export default function Topbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const darkTheme = 'dark-theme';
-  const iconTheme = 'uil-sun';
-  const [iconThemeState, setIconTheme] = useState('uil-sun');
-  const selectedTheme = localStorage.getItem('selected-theme') ;
-  let selectedIcon = localStorage.getItem('selected-icon') ? localStorage.getItem('selected-icon') : iconThemeState;
-  const [themeState, setTheme] = useState();
+  let selectedIcon = localStorage.getItem('selected-icon');
+  let selectedTheme = localStorage.getItem('selected-theme');
+
+  const [iconThemeState, setIconTheme] = useState(selectedIcon ? selectedIcon : 'uil-moon');
+  const [themeState, setTheme] = useState(selectedTheme ? selectedTheme : 'light-theme');
 
   const setIcon = () => {
-      console.log('1', iconThemeState);
     setIconTheme(iconThemeState === 'uil-sun' ? 'uil-moon' : 'uil-sun');
-    console.log('2', iconThemeState);
-
+    setTheme(themeState === 'dark-theme' ? 'light-theme' : 'dark-theme');
     localStorage.setItem('selected-icon', iconThemeState);
     selectedIcon = iconThemeState;
-  console.log('sd', selectedIcon);
-
+    localStorage.setItem('selected-theme', themeState);
+    selectedTheme = themeState;
+    document.body.classList[selectedTheme === 'dark-theme' ? 'add' : 'remove']('dark-theme');
   };
 
   return (
@@ -63,7 +61,7 @@ export default function Topbar() {
           <i className='uil uil-times nav__close' id='nav-close' onClick={() => setShowMenu(false)}></i>
         </div>
         <div className='nav__btns'>
-          <i className={`uil ${selectedIcon} change-theme`} id='theme-button' onClick={() => setIcon()}></i>
+          <i className={`uil ${iconThemeState} change-theme`} onClick={() => setIcon()}></i>
           <div className='nav__toggle' id='nav-toggle' onClick={() => setShowMenu(!showMenu)}>
             <i className='uil uil-apps'></i>
           </div>
