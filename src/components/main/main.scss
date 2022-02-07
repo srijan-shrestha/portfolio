@@ -1,0 +1,104 @@
+@import "../../assets/scss/abstracts/variables";
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/typography";
+
+.layout {
+    display: flex;
+    height: 100vw;
+
+    &__social,
+    &__email {
+        display: none;
+    }
+
+    &__content {
+        &__page {
+            padding: 0 1rem;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 568px) {
+    .layout {
+        &__content {
+            &__page {
+                padding: 0 50px;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .layout {
+        &__social {
+            display: block;
+            width: 40px;
+            position: fixed;
+            bottom: 0px;
+            left: 40px;
+            right: auto;
+            z-index: 10;
+
+            &-icon {
+                font-size: 1.25rem;
+                color: $primary;
+                &:hover {
+                    color: $primaryDark;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 90px;
+                    margin: 0px auto;
+                    background-color: $primary;
+                }
+            }
+
+            li {
+                padding: 1rem;
+
+                &:last-child {
+                    margin-bottom: 1.5rem;
+                }
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
+
+            // color: var(--light-slate);
+        }
+
+
+        &__email {
+            display: block;
+            width: 40px;
+            position: fixed;
+            bottom: 0px;
+            left: auto;
+            right: 40px;
+            z-index: 10;
+            // color: var(--light-slate);
+        }
+
+        &__content {
+            &__page {
+                padding: 0 150px;
+            }
+        }
+    }
+}
