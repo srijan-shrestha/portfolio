@@ -24,7 +24,7 @@
         border: 0;
         border-left: 2px solid $primaryLight;
         background-color: transparent;
-        // color: $primary;
+        color: $titleColor;
         font-size: $fs-md;
         text-align: left;
         white-space: nowrap;
@@ -34,11 +34,12 @@
         &-active {
             color: $primary;
             border-left: 4px solid $primary;
-            background-color: $primaryLight;
+            background-color: $primaryLighter;
         }
 
         &:hover {
-            background-color: $primaryLight;
+            color: $primary;
+            background-color: $primaryLighter;
         }
     }
 
@@ -120,7 +121,7 @@
     
         &__tabList {
             display: flex;
-            flex-wrap: wrap;
+            overflow-x: auto;
         }
 
         &__button {
@@ -128,7 +129,7 @@
             &-active {
                 color: $primary;
                 border-bottom: 4px solid $primary;
-                background-color: $primaryLight;
+                background-color: $primaryLighter;
             }
         }
     }
