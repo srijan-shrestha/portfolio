@@ -10,7 +10,7 @@ const Intro = () => {
             <h2 className='home__title'>Srijan Shrestha</h2>
           </div>
           <div>
-            <h3 className='home__subtitle'>Full Stack Developer</h3>
+            <h3 className='home__subtitle'>Full Stack Software Engineer</h3>
           </div>
           <p className='home__description'>
             High Level experience in web design and development knowledge, producing quality work.

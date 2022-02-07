@@ -52,7 +52,7 @@
     }
     
     &__scroll {
-        display: none;
+        // display: none;
         &-button {
             color: $primary;
             transition: .3s;
@@ -96,6 +96,10 @@
 @media screen and (min-width: 568px) {
 
     .home {
+
+        &__container {
+            row-gap: 2rem !important;
+        }
 
         &__content {
             grid-template-columns: max-content 1fr 1fr;

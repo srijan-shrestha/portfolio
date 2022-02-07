@@ -45,6 +45,7 @@
             &-icon {
                 font-size: 1.25rem;
                 color: $primary;
+
                 &:hover {
                     color: $primaryDark;
                 }
@@ -95,6 +96,15 @@
             // color: var(--light-slate);
         }
 
+        &__content {
+            &__page {
+                padding: 0 100px;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
         &__content {
             &__page {
                 padding: 0 150px;
