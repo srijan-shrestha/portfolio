@@ -31,8 +31,9 @@ const About = () => (
       {/* <img src={aboutMeImage} alt='' className='about__img'></img> */}
       <div className='about__data'>
         <p className='about__description'>
-          Web developer, with extensive knowledge and years of experience, working in web technologies, delivering
-          quality work.
+          Hi! I am Srijan Shrestha, fullStack web engineer, who loves building amazing web applications. I started my journey in the world of web back in my university days and since then I am hooked into it.  
+          
+          I have had the privilege of working at US based companies and during that period I gain extensive knowledge and years of experience, working in cuttin edge web technologies while delivering quality prodcuts and services.
         </p>
 
         <div className='about__info'>
@@ -43,7 +44,7 @@ const About = () => (
           </div>
 
           <div>
-            <span className='about__info-title'>10+ </span>
+            <span className='about__info-title'>05+ </span>
             <span className='about__info-name'>Completed project</span>
             {/* <br> project</br> */}
           </div>
