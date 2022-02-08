@@ -4,10 +4,11 @@ import Contact from '../Contact/Contact';
 import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Experience from '../Experience/Experience';
+import Footer from '../Footer/Footer';
 
 const Main = () => {
   return (
-    <main className='main'>
+    <div className='main'>
       <div className='layout'>
         <div className='layout__social'>
           <ul className=''>
@@ -61,10 +62,11 @@ const Main = () => {
             <Experience />
             <Contact />
           </main>
+          <Footer />
         </div>
         <div className='layout__email sideElem'></div>
       </div>
-    </main>
+    </div>
   );
 };
 

@@ -104,11 +104,15 @@
     }
 
 
-    @media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 768px) {
+    .layout {
         &__content {
             &__page {
                 padding: 0 150px;
             }
         }
-    }
+    } 
 }
