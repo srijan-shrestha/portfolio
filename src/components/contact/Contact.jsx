@@ -2,7 +2,7 @@ import './contact.scss';
 
 export default function Contact() {
   return (
-    <section className='contact section grid' id='contact'>
+    <section className='contact section grid' >
       <div className='contact__container container'>
         <h2 className='contact__title '>Contact Me!</h2>
 
@@ -15,7 +15,7 @@ export default function Contact() {
           <p className='contact__email'>srijans318@gmail.com</p>
         </div>
 
-        <div className='contact__button'>
+        <div className='contact__button' id='contact'>
             <a className='button button-flex' href='mailto:srijans318@gmail.com'>Reach Out!</a>
         </div>
       </div>
