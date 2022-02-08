@@ -16,7 +16,7 @@ export default function Contact() {
         </div>
 
         <div className='contact__button' id='contact'>
-            <a className='button button-flex' href='mailto:srijans318@gmail.com'>Reach Out!</a>
+            <a className='button button-flex' href='mailto:srijans318@gmail.com'>Reach Out</a>
         </div>
       </div>
     </section>
