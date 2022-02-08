@@ -1,3 +1,49 @@
+@import "../../assets/scss/abstracts/variables";
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/typography";
+
 .contact {
-    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-weight: $fw-sb;
+        color: $titleColor;
+        font-size: clamp(40px, 5vw, 60px);
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+    }
+
+    &__purpose {
+        text-align: center;
+        font-size: 1.15rem;
+        color: $textColor;
+    }
+
+    &__email {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        color: $primary;
+        font-weight: $fw-sb;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        &__container {
+            max-width: 605px;
+        }
+
+        &__button {
+            margin-top: 3rem;
+        }
+    }
 }
