@@ -1,6 +1,5 @@
 .section {
     padding: 2rem 0 4rem;
-    height: 100vh;
 
     &__title {
         font-size: clamp(24px, 5vw, $fs-h1);
@@ -43,5 +42,11 @@
 @media screen and (min-width: 768px) {
     .section {
         padding: 5rem 0 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        height: 100vh;
     }
 }
