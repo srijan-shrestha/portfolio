@@ -48,8 +48,8 @@ export default function Topbar() {
               </a>
             </li>
             <li className='nav__item'>
-              <a href='#portfolio' className='nav__link' onClick={() => setShowMenu(false)}>
-                <i className='uil uil-scenery nav__icon'></i> Portfolio
+              <a href='#work' className='nav__link' onClick={() => setShowMenu(false)}>
+                <i className='uil uil-scenery nav__icon'></i> Work
               </a>
             </li>
             <li className='nav__item'>

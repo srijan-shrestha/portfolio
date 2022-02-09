@@ -5,6 +5,7 @@ import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Experience from '../Experience/Experience';
 import Footer from '../Footer/Footer';
+import Works from '../Works/Work';
 
 const Main = () => {
   return (
@@ -44,7 +45,7 @@ const Main = () => {
             </li>
             <li>
               <a
-                href='https://twitter.com/piratesrijan'
+                href='https://twitter.com/piratesrizan'
                 target='_blank'
                 rel='noreferrer'
                 className='layout__social-icon'
@@ -60,6 +61,7 @@ const Main = () => {
             <About />
             <Skills />
             <Experience />
+            <Works />
             <Contact />
           </main>
           <Footer />

@@ -1,7 +1,7 @@
 import './Skills.scss';
 
 const skills = [
-  { name: 'Programming Langugaes', icon: 'uil-programming-language',  values: ['Javascript', 'Typescript', 'C#', 'Python'] },
+  { name: 'Programming Langugaes', icon: 'uil-programming-language',  values: ['Javascript', 'Typescript', 'C#', 'Python', 'HTML', 'CSS/SCSS'] },
   {
     name: 'Web Frameworks and Libraries', icon:'uil-brackets-curly', 
     values: ['Dot Net Core', 'Django Rest Framework', 'Angular', 'React', 'jQuery']

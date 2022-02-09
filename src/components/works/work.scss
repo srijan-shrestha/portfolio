@@ -1,0 +1,89 @@
+@import "../../assets/scss/abstracts/variables";
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/typography";
+
+.work {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__card {
+        background-color: $primaryLighter;
+        border-radius: .5rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        opacity: 0.5;
+
+        &:hover {
+            // background-color: $primary;
+            opacity: 1;
+        }
+    }
+
+    &__image {
+        padding-bottom: .75rem;
+        border-radius: 3px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    &__name {
+        color: $titleColor;
+        font-weight: $fw-sb;
+        font-size: 1.125rem;
+        cursor: pointer;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    &__skills {
+
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+
+        &-badge {
+            border: 1px solid $primary;
+            font-size: .75rem;
+            color: $primary;
+            font-weight: $fw-sb;
+            margin-right: .75rem;
+            border-radius: 3px;
+            padding: 2px 4px;
+        }
+    }
+
+    &__description {
+        color: $textColorLight;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .work {
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__card {
+            flex: 0 0 47%;
+            min-height: 25vw;
+
+            // width: 25vw;
+        }
+
+        &__image {
+            height: calc(25vw - .75rem);
+        }
+    }
+}
