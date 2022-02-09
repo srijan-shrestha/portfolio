@@ -135,3 +135,21 @@
     }
 
 }
+
+@media screen and (min-width: 768px) {
+    .experience {
+        &__container {
+            width: 605px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .experience {
+        &__container {
+            width: 750px;
+            margin: auto;
+        }
+    }
+}
