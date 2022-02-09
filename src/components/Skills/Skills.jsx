@@ -11,8 +11,8 @@ const skills = [
 ];
 
 function Skills() {
-  const skillContent = skills.map((skill) => (
-    <div className='skills__content'>
+  const skillContent = skills.map((skill, i) => (
+    <div key={i} className='skills__content'>
       <div className='skills__header'>
         <i className={`uil ${skill.icon} skills__icon`}></i>
 
@@ -21,8 +21,8 @@ function Skills() {
         </div>
       </div>
       <div className='skills__list'>
-        {skill.values.map((value) => (
-          <div className='skills__data'>
+        {skill.values.map((value, j) => (
+          <div key={j} className='skills__data'>
             <span className='skills__name'>{value}</span>
           </div>
         ))}

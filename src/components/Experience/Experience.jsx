@@ -46,8 +46,8 @@ const experiences = [
 function Experience() {
   const [companyCode, toggleComapny] = useState('IW');
 
-  const companyContent = companies.map((company) => (
-    <div>
+  const companyContent = companies.map((company, i) => (
+    <div key={i}>
       <button
         id={company.code}
         className={`experience__button ${companyCode === company.code ? 'experience__button-active' : ''}`}
@@ -67,8 +67,8 @@ function Experience() {
     experience = experiences.filter((elem) => elem.company === company[0].name);
   }
 
-  const experienceContent = experience.map((exp) => (
-    <div>
+  const experienceContent = experience.map((exp, i) => (
+    <div key={i}>
       <h3>
         <span></span>
         <span className='experience__company'>
@@ -79,8 +79,8 @@ function Experience() {
         </span>
         <p className='experience__duration'>{exp.duration}</p>
       </h3>
-      {exp.responsibilities.map((responsiblity) => (
-        <div>
+      {exp.responsibilities.map((responsiblity, j) => (
+        <div key={j}>
           <ul className='experience__reponsibilities'>
             <li>{responsiblity}</li>
           </ul>
