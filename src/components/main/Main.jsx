@@ -19,7 +19,7 @@ const Main = () => {
                 rel='noreferrer'
                 className='layout__social-icon'
               >
-                <i className='uil uil-linkedin-alt'></i>
+                <i className='uil uil-linkedin'></i>
               </a>
             </li>
             <li>
@@ -29,7 +29,7 @@ const Main = () => {
                 rel='noreferrer'
                 className='layout__social-icon'
               >
-                <i className='uil uil-github-alt'></i>
+                <i className='uil uil-github'></i>
               </a>
             </li>
             <li>
@@ -39,7 +39,7 @@ const Main = () => {
                 rel='noreferrer'
                 className='layout__social-icon'
               >
-                <i className='uil uil-instagram-alt'></i>
+                <i className='uil uil-instagram'></i>
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@ const Main = () => {
                 rel='noreferrer'
                 className='layout__social-icon'
               >
-                <i className='uil uil-twitter-alt'></i>
+                <i className='uil uil-twitter'></i>
               </a>
             </li>
           </ul>
