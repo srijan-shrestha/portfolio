@@ -2,6 +2,10 @@
 @import "../../assets/scss/base/colors";
 @import "../../assets/scss/base/typography";
 
+.section {
+    height: auto;
+}
+
 .work {
     &__list {
         display: flex;
