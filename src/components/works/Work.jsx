@@ -25,11 +25,11 @@ function Works() {
           <div className='work__card'>
             <div className='work__image'>
               <img src={yss} alt='yss'></img>
-            </div>
-            <div className='work__link'>
-              <a  rel='noreferrer' target='_blank' href='https://yoursteelstorage.com/'>
-                <i class='uil uil-link'></i>
-              </a>
+              <div className='work__link' title='Link to the site'>
+                <a rel='noreferrer' target='_blank' href='https://yoursteelstorage.com/'>
+                  <i class='uil uil-link'></i>
+                </a>
+              </div>
             </div>
 
             <div className='work__name'>

@@ -12,26 +12,62 @@
     }
 
     &__card {
-        position: relative;
         background-color: $primaryLighter;
         border-radius: .5rem;
         margin-bottom: 2rem;
         padding: 1rem;
-        // filter: brightness(0.9);
-
         opacity: 0.7;
 
+        .work__link {
+            display: none;
+        }
+
         &:hover {
-            // background-color: $primary;
             transition: opacity 0.75s;
             -webkit-transition: opacity 0.75s;
             opacity: 1;
 
-            // filter: brightness(1);
+            .work__link {
+                position: absolute;
+                bottom: 10%;
+                right: 2%;
+                cursor: pointer;
+                font-size: 2rem;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: $primary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: fadeInAnimation ease 0.75s;animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                i {
+                    padding: 0.5rem;
+                    color: $titleColor;
+                }
+
+            }
+        }
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 
     &__image {
+        position: relative;
         padding-bottom: .75rem;
         border-radius: 3px;
 
@@ -43,22 +79,7 @@
         }
     }
 
-    &__link {
-        cursor: pointer;
-        font-size: 2rem;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        background-color: $primary;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        i {
-            padding: 0.5rem;
-            color: $titleColor;
-        }
-    }
 
     &__name {
         color: $titleColor;
