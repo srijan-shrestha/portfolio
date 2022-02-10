@@ -2,12 +2,12 @@ import { useState } from 'react';
 import './Experience.scss';
 
 const companies = [
+  { name: 'Devfinity', code: 'devfinity' },
   { name: 'Insight Workshop', code: 'IW' },
-  { name: 'Outcode Software', code: 'outcode' },
-  { name: 'Devfinity', code: 'devfinity' }
+  { name: 'Outcode Software', code: 'outcode' }
 ];
 
-const defaultCompany = 'IW';
+const defaultCompany = 'devfinity';
 
 const experiences = [
   {
@@ -55,10 +55,7 @@ function Experience() {
         className={`experience__button ${companyCode === company.code ? 'experience__button-active' : ''}`}
         onClick={() => toggleComapny(company.code)}
       >
-          <span>
-          {company.name}
-          </span>
-       
+        <span>{company.name}</span>
       </button>
     </div>
   ));
