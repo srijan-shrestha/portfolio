@@ -60,7 +60,7 @@ const Main = () => {
             <Intro />
             <About />
             <Skills />
-            {/* <Experience /> */}
+            <Experience />
             <Works />
             <Contact />
           </main>

@@ -7,6 +7,8 @@ const companies = [
   { name: 'Devfinity', code: 'devfinity' }
 ];
 
+const defaultCompany = 'IW';
+
 const experiences = [
   {
     title: 'Fullstack Software Engineer',
@@ -44,7 +46,7 @@ const experiences = [
 ];
 
 function Experience() {
-  const [companyCode, toggleComapny] = useState('IW');
+  const [companyCode, toggleComapny] = useState(defaultCompany);
 
   const companyContent = companies.map((company, i) => (
     <div key={i}>
