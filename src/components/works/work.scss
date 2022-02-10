@@ -21,6 +21,7 @@
         margin-bottom: 2rem;
         padding: 1rem;
         opacity: 0.7;
+        min-height: 30vw;
 
         .work__link {
             display: none;
@@ -97,7 +98,8 @@
     }
 
     &__skills {
-
+        display: flex;
+        flex-wrap: wrap;
         margin-bottom: 0.75rem;
         margin-top: 0.75rem;
 
@@ -109,11 +111,13 @@
             margin-right: .75rem;
             border-radius: 3px;
             padding: 2px 4px;
+            margin-bottom: 0.75rem;
         }
     }
 
     &__description {
         color: $textColorLight;
+        margin-bottom: 1rem;
     }
 }
 
@@ -126,9 +130,9 @@
 
         &__card {
             flex: 0 0 47%;
-            min-height: 25vw;
+            min-height: 30vw;
+            margin-bottom: 1.5rem;
 
-            // width: 25vw;
         }
 
         &__image {

@@ -7,8 +7,21 @@ import PM from '../../assets/images/QKLYPM.PNG';
 import HGH from '../../assets/images/HGH.PNG';
 import portfolio from '../../assets/images/portfolio.PNG';
 
-
 const works = [
+  {
+    name: 'Qkly',
+    image: qkly,
+    link: 'https://qkly.io/',
+    skills: ['HTML', 'SCSS', 'Angular', '.Net Core', 'SQL Server', 'Azure App Service'],
+    description: 'A web portal that connects job seeker and job provider.'
+  },
+  {
+    name: 'QKLY PM',
+    image: PM,
+    link: 'https://app.qkly.io/',
+    skills: ['HTML', 'SCSS', 'Angular', '.Net Core', 'SQL Server', 'Azure App Service'],
+    description: 'A project management tool.'
+  },
   {
     name: 'Cross Country Freight Solution',
     image: ccfs,
@@ -24,32 +37,18 @@ const works = [
     description: 'A web application for container shipment and management.'
   },
   {
+    name: 'Hey Grill Hey',
+    image: HGH,
+    link: 'https://hey-grill-hey-ui.azurewebsites.net/',
+    skills: ['HTML', 'SCSS', 'Angular', '.Net Core', 'SQL Server', 'Azure App Service'],
+    description: 'A web application to maintain inventory for US based barbeque sauce company.'
+  },
+  {
     name: 'Blaast',
     image: blaast,
     link: 'https://blaastapp.com/',
     skills: ['HTML', 'SCSS', 'Django Rest Framework', 'Angular', 'SQL', 'AWS EC2'],
     description: 'A web application for tracking employers, teams, employees and company goals.'
-  },
-  {
-    name: 'Qkly',
-    image: qkly,
-    link: 'https://qkly.io/',
-    skills: ['HTML', 'SCSS', 'Angular', '.Net Core', 'SQL Server', 'Azure Web Service'],
-    description: 'A web portal that connects job seeker and job provider.'
-  },
-  {
-    name: 'QKLY PM',
-    image: PM,
-    link: 'https://app.qkly.io/',
-    skills: ['HTML', 'SCSS', 'Angular', '.Net Core', 'SQL Server', 'Azure Web Service'],
-    description: 'A project management tool.'
-  },
-  {
-    name: 'Hey Grill Hey',
-    image: HGH,
-    link: 'https://hey-grill-hey-ui.azurewebsites.net/',
-    skills: ['HTML', 'SCSS', 'Angular', '.Net Core', 'SQL Server', 'Azure Web Service'],
-    description: 'A web application to maintain inventory for US based barbeque sauce company.'
   },
   {
     name: 'Portfolio Website',
@@ -78,7 +77,9 @@ function Works() {
       </div>
       <div className='work__skills'>
         {work.skills.map((skill, j) => (
-          <span key={j} className='work__skills-badge'>{skill}</span>
+          <span key={j} className='work__skills-badge'>
+            {skill}
+          </span>
         ))}
       </div>
       <div className='work__description'>{work.description}</div>
