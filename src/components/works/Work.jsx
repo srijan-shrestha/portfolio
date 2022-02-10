@@ -1,5 +1,5 @@
 import './work.scss';
-import ccfs from '../../assets/images/ccsfs.PNG';
+import ccfs from '../../assets/images/ccfs.PNG';
 import yss from '../../assets/images/yss.PNG';
 
 function Works() {
@@ -26,8 +26,16 @@ function Works() {
             <div className='work__image'>
               <img src={yss} alt='yss'></img>
             </div>
+            <div className='work__link'>
+              <a  rel='noreferrer' target='_blank' href='https://yoursteelstorage.com/'>
+                <i class='uil uil-link'></i>
+              </a>
+            </div>
+
             <div className='work__name'>
-              <a rel='noreferrer' target='_blank' href='https://yoursteelstorage.com/'>Your Steel Storage</a>
+              <a rel='noreferrer' target='_blank' href='https://yoursteelstorage.com/'>
+                Your Steel Storage
+              </a>
             </div>
             <div className='work__skills'>
               <span className='work__skills-badge'>HTML</span>
