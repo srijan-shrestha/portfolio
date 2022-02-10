@@ -22,7 +22,7 @@ export default function Topbar() {
   return (
     <header className='header' id='header'>
       <nav className='nav container'>
-        <a href='srijan' className='nav__logo'>
+        <a href='#home' className='nav__logo'>
           Srijan
         </a>
         <div className={`nav__menu ${showMenu ? 'show-menu' : ' '}`} id='nav-menu'>
