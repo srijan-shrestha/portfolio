@@ -70,19 +70,21 @@ function Works() {
           </a>
         </div>
       </div>
-      <div className='work__name'>
-        <a rel='noreferrer' target='_blank' href={work.link}>
-          {work.name}
-        </a>
+      <div className='work__overflow'>
+        <div className='work__name'>
+          <a rel='noreferrer' target='_blank' href={work.link}>
+            {work.name}
+          </a>
+        </div>
+        <div className='work__skills'>
+          {work.skills.map((skill, j) => (
+            <span key={j} className='work__skills-badge'>
+              {skill}
+            </span>
+          ))}
+        </div>
+        <div className='work__description'>{work.description}</div>
       </div>
-      <div className='work__skills'>
-        {work.skills.map((skill, j) => (
-          <span key={j} className='work__skills-badge'>
-            {skill}
-          </span>
-        ))}
-      </div>
-      <div className='work__description'>{work.description}</div>
     </div>
   ));
   return (

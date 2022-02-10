@@ -21,7 +21,7 @@
         margin-bottom: 2rem;
         padding: 1rem;
         opacity: 0.7;
-        min-height: 30vw;
+        // height: 30vw;
 
         .work__link {
             display: none;
@@ -84,6 +84,10 @@
         }
     }
 
+    &__overflow {
+        height: 150px;
+        overflow-y: auto;
+    }
 
 
     &__name {
@@ -130,13 +134,18 @@
 
         &__card {
             flex: 0 0 47%;
-            min-height: 30vw;
+            min-height: 25vw;
             margin-bottom: 1.5rem;
 
         }
 
         &__image {
             height: calc(25vw - .75rem);
+        }
+
+        &__overflow {
+            height: 120px;
+            overflow-y: auto;
         }
     }
 }

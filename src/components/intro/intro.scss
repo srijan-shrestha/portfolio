@@ -2,12 +2,16 @@
 @import "../../assets/scss/base/colors";
 @import "../../assets/scss/base/typography";
 
+.section {
+    min-height: 100vh;
+}
+
 .home {
     display: grid;
     align-items: center;
 
     &__container {
-        gap:1rem;
+        gap: 1rem;
     }
 
     &__content {
@@ -19,6 +23,7 @@
     &__blob {
         width: 200px;
         fill: $primary;
+
         &-img {
             width: 170px;
         }
@@ -34,12 +39,13 @@
     }
 
     &__title {
-        font-size:  clamp(40px, 8vw, 80px);
+        font-size: clamp(40px, 8vw, 80px);
         transition-delay: 200ms;
     }
 
     &__subtitle {
-        font-size: clamp(30px, 6vw, 60px);;
+        font-size: clamp(30px, 6vw, 60px);
+        ;
         color: $textColorLight;
         font-weight: $fw-md;
         margin-bottom: $mb-0-75;
@@ -50,8 +56,9 @@
         margin-bottom: $mb-2;
         transition-delay: 400ms;
     }
-    
+
     &__scroll {
+
         // display: none;
         &-button {
             color: $primary;
@@ -141,7 +148,7 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
 
     .home {
         &__blob {
