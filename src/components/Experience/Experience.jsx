@@ -8,7 +8,7 @@ const companies = [
 
 ];
 
-const defaultCompany = 'devfinity';
+const defaultCompany = 'IW';
 
 const experiences = [
   {
