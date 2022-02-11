@@ -2,9 +2,10 @@ import { useState } from 'react';
 import './Experience.scss';
 
 const companies = [
-  { name: 'Devfinity', code: 'devfinity' },
   { name: 'Insight Workshop', code: 'IW' },
-  { name: 'Outcode Software', code: 'outcode' }
+  { name: 'Outcode Software', code: 'outcode' },
+  { name: 'Devfinity', code: 'devfinity' },
+
 ];
 
 const defaultCompany = 'devfinity';
