@@ -4,6 +4,9 @@
 
 
 .about {
+    justify-content: center;
+    align-items: center;
+
     &__img {
         width: 200px;
         border-radius: 0.5rem;
@@ -20,7 +23,6 @@
     }
 
     &__description {
-        text-align: center;
         margin-bottom: $mb-2-5;
     }
 
@@ -49,4 +51,22 @@
         justify-content: center;
     }
 
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        &__container {
+            width: 605px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        &__container {
+            width: 800px;
+            margin: auto;
+        }
+    }
 }
