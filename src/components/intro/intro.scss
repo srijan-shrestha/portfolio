@@ -2,11 +2,10 @@
 @import "../../assets/scss/base/colors";
 @import "../../assets/scss/base/typography";
 
-.section {
-    min-height: 100vh;
-}
 
 .home {
+    min-height: 100vh;
+
     display: grid;
     align-items: center;
 

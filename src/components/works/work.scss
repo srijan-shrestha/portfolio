@@ -2,11 +2,9 @@
 @import "../../assets/scss/base/colors";
 @import "../../assets/scss/base/typography";
 
-.section {
-    height: auto;
-}
 
 .work {
+    height: auto;
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -84,12 +82,6 @@
         }
     }
 
-    &__overflow {
-        height: 150px;
-        overflow-y: auto;
-    }
-
-
     &__name {
         color: $titleColor;
         font-weight: $fw-sb;
@@ -143,9 +135,13 @@
             height: calc(25vw - .75rem);
         }
 
-        &__overflow {
-            height: 120px;
-            overflow-y: auto;
-        }
+       
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    &__overflow {
+        height: 120px;
+        overflow-y: auto;
     }
 }

@@ -26,7 +26,7 @@ const experiences = [
     title: 'Frontend Software Engineer',
     company: 'Outcode Software',
     link: 'https://outcodesoftware.com/',
-    duration: 'June 2018 - November 2021',
+    duration: 'October 2020 - November 2021',
     responsibilities: [
       'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA',
       'Maintain the application to be usable by their multiple branch company ',
