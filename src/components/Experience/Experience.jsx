@@ -19,7 +19,7 @@ const experiences = [
     responsibilities: [
       'Write modern, performant, maintanable code for a diverse array of client and internal projects',
       'Work with a variety of different languages, platforms, frameworks such as Javascript, Typescript, Angular, Django, Django Rest Framework, AWS',
-      'Communicate with multi-disciplinary teams of engineers, project managers and clients on a daily basis'
+      'Communicate with multi-disciplinary teams of engineers, project managers and clients on a daily basis', 'Pro-active involvement in project risk analysis and mitigation'
     ]
   },
 
@@ -31,7 +31,8 @@ const experiences = [
     responsibilities: [
       'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA',
       'Maintain the application to be usable by their multiple branch company ',
-      'Interfaced with clients on daily basis, providing technological expertise'
+      'Interfaced with clients on daily basis, providing technological expertise', 
+      'Made responsive and cross browser compatible application'
     ]
   },
 
@@ -41,7 +42,11 @@ const experiences = [
     link: 'https://devfinity.io/',
     duration: 'November 2021 - Present',
     responsibilities: [
-      'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA'
+      `Engineered and maintained features of QKLY's Project Management web app using Dot net Core, Angular, SQL Server, Azure app service`,
+      `Interfaced with user experience designers and other developers to ensure thoughtful and 
+      coherent user experiences across QKLY’s projects`,
+      `Architected and implemented the frontend project using Angular, HTML and SCSS`,
+      `Proposed and implemented scalable solutions to issues identified in QKLY's role permission based Project Management tool`
     ]
   }
 ];

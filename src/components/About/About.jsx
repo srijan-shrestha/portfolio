@@ -31,9 +31,10 @@ const About = () => (
       {/* <img src={aboutMeImage} alt='' className='about__img'></img> */}
       <div className='about__data'>
         <p className='about__description'>
-          Hi! I am Srijan Shrestha, fullStack web engineer, who loves building amazing web applications. I started my journey in the world of web back in my university days and since then I am hooked into it.  
           
-          I have had the privilege of working at US based companies and during that period I gain extensive knowledge and years of experience, working in cutting edge web technologies while delivering quality prodcuts and services.
+        I am a full-stack software engineer with a background in computer engineering. I started my journey in the world of the web back in my university days and since then I am hooked on it. 
+
+        I strive to create applications that provide an intuitive user experience backed by robust and efficiently functioning code. I have had the privilege of working at US-based companies and during that period I gained extensive knowledge and years of experience, working in cutting edge web technologies while delivering quality products and services.
         </p>
 
         <div className='about__info'>

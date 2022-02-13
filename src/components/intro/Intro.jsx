@@ -13,7 +13,7 @@ const Intro = () => {
             <h3 className='home__subtitle'>Full Stack Software Engineer</h3>
           </div>
           <p className='home__description'>
-            High Level experience in web design and development knowledge, producing quality work.
+            An experienced and skilled professional, who produces quality work.
           </p>
           <a href='#contact' className='button button-flex'>
             Contact Me <i className='uil uil-message button__icon'></i>
