@@ -19,8 +19,22 @@
     align-items: center;
 
     &__logo {
-        color: $titleColor;
+        margin-left: 1.5rem;
+        color: $primary;
         font-weight: $fw-md;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        border: 2px solid $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: $fs-h2;
+            font-weight: $fw-sb;
+            margin: auto;
+        }
         &:hover {
             color: $primary;
         }

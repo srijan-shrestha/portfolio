@@ -51,7 +51,7 @@ img {
 
 ::-webkit-scrollbar {
     width: .60rem;
-    height: 0.5rem;
+    height: 0.25rem;
     background-color: $scrollBarColor;
     border-radius: 0.5rem;
 }
@@ -65,92 +65,9 @@ img {
     }
 }
 
-// // For small devices
-// @media screen and (max-width: 350px) {
+@media screen and (min-width: 568px) {
+    ::-webkit-scrollbar {
+        height: 0.5rem;
+    }
+}
 
-//     ._skills__title {
-//         font-size: $fs-md;
-
-//     }
-// }
-
-// // For medium devices
-// @media screen and (min-width: 568px) {
-
-//     .about {
-//         &__container {
-//             grid-template-columns: repeat(2, 1fr);
-//         }
-//     }
-
-//     .skill {
-//         &__container {
-//             grid-template-columns: repeat(2, 1fr);
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 768px) {
-
-//     body {
-//         margin: 0;
-//     }
-
-//     .section {
-//         padding: 6rem 0 2rem;
-
-//         &__subtitle {
-//             margin-bottom: 4rem;
-//         }
-//     }
-
-//     .main,
-//     .footer__container {
-//         padding: 0 1rem;
-//     }
-
-//     .about {
-//         &__container {
-//             column-gap: 5rem;
-//         }
-
-//         &__img {
-//             width: 350px;
-//         }
-
-//         &__description {
-//             text-align: initial;
-//         }
-
-//         &__info {
-//             justify-content: space-between;
-//         }
-
-//         &__buttons {
-//             justify-content: initial;
-//         }
-//     }
-
-//     .footer {
-//         &__container {
-//             grid-template-columns: repeat(3, 1fr);
-//         }
-
-//         &__bg {
-//             padding: 3rem 0 3.5rem;
-//         }
-
-//         &__links {
-//             flex-direction: row;
-//             column-gap: 2rem;
-//         }
-
-//         &__socials {
-//             justify-self: flex-end;
-//         }
-
-//         &__copy {
-//             margin-top: 4.5rem;
-//         }
-//     }
-// }

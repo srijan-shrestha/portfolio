@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './topbar.scss';
+import logo from '../../assets/images/srijan_logo.png'
 
 export default function Topbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -23,7 +24,7 @@ export default function Topbar() {
     <header className='header' id='header'>
       <nav className='nav container'>
         <a href='#home' className='nav__logo'>
-          Srijan
+            <span>S</span>
         </a>
         <div className={`nav__menu ${showMenu ? 'show-menu' : ' '}`} id='nav-menu'>
           <ul className='nav__list grid'>
