@@ -8,7 +8,12 @@ const About = () => (
     <span className='section__subtitle'>My introduction</span>
     <div className='about__container container grid'>
       <div className='about__img'>
-        <svg className='about__blob' viewBox='0 0 200 187' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'>
+        <svg
+          className='about__blob'
+          viewBox='0 0 200 187'
+          xmlns='http://www.w3.org/2000/svg'
+          xmlnsXlink='http://www.w3.org/1999/xlink'
+        >
           <mask id='mask0' mask-type='alpha'>
             <path
               d='M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -31,10 +36,14 @@ const About = () => (
       {/* <img src={aboutMeImage} alt='' className='about__img'></img> */}
       <div className='about__data'>
         <p className='about__description'>
-          
-        I am a full-stack software engineer with a background in computer engineering. I started my journey in the world of the web back in my university days and since then I am hooked on it. 
-
-        I strive to create applications that provide an intuitive user experience backed by robust and efficiently functioning code. I have had the privilege of working at US-based companies and during that period I gained extensive knowledge and years of experience, working in cutting edge web technologies while delivering quality products and services.
+          I am a full-stack software engineer with a background in computer engineering. I started my journey in the
+          world of the web back in my university days and since then I am hooked on it.
+        </p>
+        <p className='about__description'>
+          I strive to create applications that provide an intuitive user experience backed by robust and efficiently
+          functioning code. I have had the privilege of working at US-based companies and during that period I gained
+          extensive knowledge and years of experience, working in cutting edge web technologies while delivering quality
+          products and services.
         </p>
 
         <div className='about__info'>
