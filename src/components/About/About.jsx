@@ -47,19 +47,19 @@ const About = () => (
         </p>
 
         <div className='about__info'>
-          <div>
+          <div className='about__info-container'>
             <span className='about__info-title'>03+ </span>
             <span className='about__info-name'>Years experience</span>
             {/* <br> Experience</br> */}
           </div>
 
-          <div>
+          <div className='about__info-container'>
             <span className='about__info-title'>05+ </span>
             <span className='about__info-name'>Completed project</span>
             {/* <br> project</br> */}
           </div>
 
-          <div>
+          <div className='about__info-container'>
             <span className='about__info-title'>03+ </span>
             <span className='about__info-name'>Companies worked</span>
             {/* <br> Worked</br> */}
