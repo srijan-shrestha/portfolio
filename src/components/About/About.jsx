@@ -48,7 +48,7 @@ const About = () => (
 
         <div className='about__info'>
           <div className='about__info-container'>
-            <span className='about__info-title'>03+ </span>
+            <span className='about__info-title'>04+ </span>
             <span className='about__info-name'>Years experience</span>
             {/* <br> Experience</br> */}
           </div>
