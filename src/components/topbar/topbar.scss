@@ -19,7 +19,7 @@
     align-items: center;
 
     &__logo {
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         color: $primary;
         font-weight: $fw-md;
         height: 35px;
@@ -132,6 +132,7 @@
     .nav {
         height: 4.5rem;
         column-gap: 1rem;
+        padding-top: 1rem;
 
         &__icon,
         &__close,
