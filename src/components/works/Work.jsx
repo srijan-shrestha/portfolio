@@ -3,7 +3,7 @@ import ccfs from '../../assets/images/ccfs.PNG';
 import yss from '../../assets/images/yss.PNG';
 import blaast from '../../assets/images/blaast.PNG';
 import qkly from '../../assets/images/qkly.PNG';
-import PM from '../../assets/images/QKLYPM.PNG';
+import BizVue from '../../assets/images/BizVue.JPG';
 import HGH from '../../assets/images/HGH.PNG';
 import portfolio from '../../assets/images/portfolio.PNG';
 
@@ -17,8 +17,8 @@ const works = [
   },
   {
     name: 'QKLY PM',
-    image: PM,
-    link: 'https://app.qkly.io/',
+    image: BizVue,
+    link: 'https://nowcfo.bizvue.io/',
     skills: ['HTML', 'SCSS', 'Angular', '.Net Core', 'SQL Server', 'Azure App Service'],
     description: 'A project management tool.'
   },
