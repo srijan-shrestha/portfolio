@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.3fd70106.chunk.css",
-    "main.js": "/static/js/main.95f63d12.chunk.js",
-    "main.js.map": "/static/js/main.95f63d12.chunk.js.map",
+    "main.js": "/static/js/main.7aca72b3.chunk.js",
+    "main.js.map": "/static/js/main.7aca72b3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
     "static/js/2.843318a8.chunk.js": "/static/js/2.843318a8.chunk.js",
@@ -10,21 +10,21 @@
     "index.html": "/index.html",
     "static/css/main.3fd70106.chunk.css.map": "/static/css/main.3fd70106.chunk.css.map",
     "static/js/2.843318a8.chunk.js.LICENSE.txt": "/static/js/2.843318a8.chunk.js.LICENSE.txt",
-    "static/media/HGH.6c9dc8de.PNG": "/static/media/HGH.6c9dc8de.PNG",
-    "static/media/QKLYPM.9648bf35.PNG": "/static/media/QKLYPM.9648bf35.PNG",
-    "static/media/blaast.a401cffc.PNG": "/static/media/blaast.a401cffc.PNG",
-    "static/media/ccfs.a3dde440.PNG": "/static/media/ccfs.a3dde440.PNG",
-    "static/media/p-removebg-preview.90c42554.jpg": "/static/media/p-removebg-preview.90c42554.jpg",
-    "static/media/portfolio.7819dad3.PNG": "/static/media/portfolio.7819dad3.PNG",
-    "static/media/qkly.e7c88ac3.PNG": "/static/media/qkly.e7c88ac3.PNG",
+    "static/media/BizVue.ed6fd979.JPG": "/static/media/BizVue.ed6fd979.JPG",
+    "static/media/HGH.88ba892f.PNG": "/static/media/HGH.88ba892f.PNG",
+    "static/media/blaast.686b48b1.PNG": "/static/media/blaast.686b48b1.PNG",
+    "static/media/ccfs.63dba8fe.PNG": "/static/media/ccfs.63dba8fe.PNG",
+    "static/media/p-removebg-preview.91d6b2e7.jpg": "/static/media/p-removebg-preview.91d6b2e7.jpg",
+    "static/media/portfolio.84798d9e.PNG": "/static/media/portfolio.84798d9e.PNG",
+    "static/media/qkly.8c81d772.PNG": "/static/media/qkly.8c81d772.PNG",
     "static/media/srijan_logo.aef53414.png": "/static/media/srijan_logo.aef53414.png",
     "static/media/srijan_resume.b1e0d776.pdf": "/static/media/srijan_resume.b1e0d776.pdf",
-    "static/media/yss.ac05a3d8.PNG": "/static/media/yss.ac05a3d8.PNG"
+    "static/media/yss.90823fca.PNG": "/static/media/yss.90823fca.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.5ebc510a.js",
     "static/js/2.843318a8.chunk.js",
     "static/css/main.3fd70106.chunk.css",
-    "static/js/main.95f63d12.chunk.js"
+    "static/js/main.7aca72b3.chunk.js"
   ]
 }
