@@ -40,7 +40,7 @@ const Footer = () => (
         <div>Designed and Build by Srijan Shrestha</div>
         <div>
             <i className="uil uil-location-point"></i>
-            <span>Kathmandu, Nepal</span>
+            <span>Toronto, Canada</span>
         </div>
     </div>
   </footer>
