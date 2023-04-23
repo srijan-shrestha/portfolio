@@ -21,7 +21,7 @@ const Footer = () => (
         </li>
         <li>
           <a
-            href='https://instagram.com/srijan_shresta'
+            href='https://instagram.com/_srijanshrestha_'
             target='_blank'
             rel='noreferrer'
             className='footer__social-icon'
