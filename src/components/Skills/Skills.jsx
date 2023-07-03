@@ -1,13 +1,14 @@
 import './Skills.scss';
 
 const skills = [
-  { name: 'Programming Langugaes', icon: 'uil-programming-language',  values: ['Javascript', 'Typescript', 'C#', 'Python', 'HTML', 'CSS/SCSS'] },
+  { name: 'Programming Langugaes', icon: 'uil-programming-language',  values: ['Javascript', 'Typescript', 'C#', 'Python', 'HTML', 'CSS/SCSS', 'Kotlin'] },
   {
     name: 'Web Frameworks and Libraries', icon:'uil-brackets-curly', 
-    values: ['Dot Net Core', 'Django Rest Framework', 'Angular', 'React', 'jQuery']
+    values: [`.Net/.Net Core`, `Entity Framework`, `Dapper`, `Angular`, `RXJs`, `Bootstrap`, `Tailwind`, `jQuery`,
+      `React`, `Express`, `Node`, `Razor page`]
   },
-  { name: 'Databases', icon:'uil-database', values: ['MySQL', 'SQL Server', 'PostgresSQL'] },
-  { name: 'Technologies', icon:'uil-servers', values: ['Rest API', 'AWS EC2', 'Azure App Service', 'ORM', 'TDD'] }
+  { name: 'Databases', icon:'uil-database', values: ['MySQL', 'MS SQL Server', 'MongoDB'] },
+  { name: 'Technologies', icon:'uil-servers', values: [`Azure App Service`, `Azure DevOps`, `AWS EC2`, `Firebase`, `Git`,`CI/CD`,`Agile/Scrum`, `REST APIs`, `TDD`, `OOP`, `OAuth2`] }
 ];
 
 function Skills() {

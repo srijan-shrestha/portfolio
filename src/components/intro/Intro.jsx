@@ -13,7 +13,12 @@ const Intro = () => {
             <h3 className='home__subtitle'>Full Stack Software Engineer</h3>
           </div>
           <p className='home__description'>
-            An experienced and skilled professional, who produces quality work.
+          <div>
+          Welcome! I specialize in transforming ideas into elegant and functional software solutions that make life easier.
+          </div>
+          <div>
+          If you have an exciting opportunity in mind, I'd love to hear from you! Feel free to reach out!
+          </div>
           </p>
           <a href='#contact' className='button button-flex'>
             Contact Me <i className='uil uil-message button__icon'></i>
