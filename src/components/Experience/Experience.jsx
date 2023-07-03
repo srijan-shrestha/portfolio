@@ -17,9 +17,13 @@ const experiences = [
     link: 'https://insightworkshop.io/',
     duration: 'June 2018 - November 2021',
     responsibilities: [
-      'Write modern, performant, maintanable code for a diverse array of client and internal projects',
-      'Work with a variety of different languages, platforms, frameworks such as Javascript, Typescript, Angular, Django, Django Rest Framework, AWS',
-      'Communicate with multi-disciplinary teams of engineers, project managers and clients on a daily basis', 'Pro-active involvement in project risk analysis and mitigation'
+      ` Handled US-based steel container service providing a web application (using Django, AWS EC2, MySQL) that allows buyers to purchase containers online from different vendors.`,
+      ` Utilized Docker and Kubernetes to containerize and orchestrate microservices, improving deployment efficiency and scalability.`,
+      ` Designed and implemented an e-learning platform using Angular framework and .Net Core API, resulting in a 30% increase in employee training completion rates.`,
+      ` Participated in the integration of OAuth2 authentication for enhanced security and user management.`,
+      ` Collaborated closely with clients to understand their needs and goals, designing custom MVP programs tailored
+      to their specific requirements and preferences in a fast-paced environment and delivering them within the deadlines.`
+      
     ]
   },
 
@@ -27,12 +31,15 @@ const experiences = [
     title: 'Frontend Software Engineer',
     company: 'Outcode Software',
     link: 'https://outcodesoftware.com/',
-    duration: 'October 2020 - November 2021',
+    duration: 'May 2020 - June 2021',
     responsibilities: [
-      'Worked with a team of designers and frontend engineers to build an web application to manage freights for a prevailing and expanding freight solution company based in USA',
-      'Maintain the application to be usable by their multiple branch company ',
-      'Interfaced with clients on daily basis, providing technological expertise', 
-      'Made responsive and cross browser compatible application'
+      `Collaborated with a cross-functional team of designers and frontend engineers to develop a freight management web application, resulting in a 40% increase in operational efficiency for the client.`,
+      `Engineered reusable components to handle scalability, reducing development time and enhancing the application's performance by 15%.`,
+      `Delivered a cross-browser-compatible and responsive web application that met all client requirements, resulting in a 100% satisfaction rate among users.`,
+      `Mentored team members on agile methodologies, leading to the successful completion of the project within the estimated timeline and budget with zero post-production defects.`,
+      `Integrated Serilog to monitor project logs, leading to a 25% decrease in issue resolution time.`,
+      `Conducted thorough code reviews and delivered constructive feedback to colleagues, promoting a culture of
+      continuous improvement.`
     ]
   },
 
@@ -40,13 +47,17 @@ const experiences = [
     title: 'Fullstack Software Engineer',
     company: 'Devfinity',
     link: 'https://devfinity.io/',
-    duration: 'November 2021 - Present',
+    duration: 'November 2020 - September 2022',
     responsibilities: [
-      `Engineered and maintained features of QKLY's Project Management web app using Dot net Core, Angular, SQL Server, Azure app service`,
-      `Interfaced with user experience designers and other developers to ensure thoughtful and 
-      coherent user experiences across QKLY’s projects`,
-      `Architected and implemented the frontend project using Angular, HTML and SCSS`,
-      `Proposed and implemented scalable solutions to issues identified in QKLY's role permission based Project Management tool`
+      `Involved in the development of an innovative online tech job marketplace using .Net Core, and Angular 9+.`,
+      `Implemented ELK stack to monitor project logs and create a comprehensive dashboard for real-time reporting,
+      leading to a 20% decrease in issue resolution time.`,
+      `Developed a project management tool similar to Jira, adding Kanban boards and time-logging features, task
+      breakdown and task assignment features, report generation, and project estimation, resulting in a 20%
+      increase in client productivity.`,
+      `Maintained Azure DevOps CI/CD pipeline to ensure seamless deployment of features in the cloud on a regular basis, ensuring continuous integration and delivery of software updates.`,
+      `Developed and implemented Dynamic SQL in Stored Procedures that involved parsing raw CSV data, transforming it, and loading it into multiple database tables.`,
+      `Conducted thorough unit testing using frameworks like NUnit, ensuring the quality and reliability of the software.`
     ]
   }
 ];

@@ -2,6 +2,9 @@ import './About.scss';
 import cv from '../../assets/pdf/srijan_resume.pdf';
 import aboutMeImage from '../../assets/images/p-removebg-preview.jpg';
 
+const yearsOfExperience = 5;
+const  noOfCompnaiesWorked = 4;
+const noOfProjectCompleted = 5;
 const About = () => (
   <section className='about section' id='about'>
     <h2 className='section__title'>About Me</h2>
@@ -48,19 +51,19 @@ const About = () => (
 
         <div className='about__info'>
           <div className='about__info-container'>
-            <span className='about__info-title'>04+ </span>
+            <span className='about__info-title'>{yearsOfExperience}+ </span>
             <span className='about__info-name'>Years experience</span>
             {/* <br> Experience</br> */}
           </div>
 
           <div className='about__info-container'>
-            <span className='about__info-title'>05+ </span>
+            <span className='about__info-title'>{noOfProjectCompleted}+ </span>
             <span className='about__info-name'>Completed project</span>
             {/* <br> project</br> */}
           </div>
 
           <div className='about__info-container'>
-            <span className='about__info-title'>03+ </span>
+            <span className='about__info-title'>{noOfCompnaiesWorked}+ </span>
             <span className='about__info-name'>Companies worked</span>
             {/* <br> Worked</br> */}
           </div>
